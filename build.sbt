@@ -3,7 +3,7 @@ import Dependencies.*
 ThisBuild / tlBaseVersion := "0.1"
 
 ThisBuild / organization := "io.github.matejcerny"
-ThisBuild / organizationName := "Matej Cerny"
+ThisBuild / organizationName := "matejcerny"
 
 ThisBuild / startYear := Some(2025)
 
