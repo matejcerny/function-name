@@ -10,21 +10,14 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  coverage:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
+      - name: Setup Scala using Coursier
+        uses: coursier/setup-action@v1
         with:
-          java-version: '21'
-          distribution: 'temurin'
-          cache: 'sbt'
-
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+          apps: sbt
       - name: Run tests
         run: sbt coverage test
       - name: Coverage Report
