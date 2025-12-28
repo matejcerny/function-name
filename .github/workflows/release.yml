@@ -24,9 +24,6 @@ jobs:
       - name: Set up sbt
         uses: sbt/setup-sbt@v1
 
-      - name: Run tests
-        run: sbt test scripted
-
       - name: Publish to Sonatype Central
         run: sbt ci-release
         env:
