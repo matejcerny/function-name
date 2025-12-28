@@ -32,5 +32,5 @@ def someFunction(): Unit =
 Add the library as a dependency:
 
 ```scala
-libraryDependencies += "io.github.matejcerny" %% "function-name" % "0.2.0"
+libraryDependencies += "io.github.matejcerny" %% "function-name" % "0.2.1"
 ```
