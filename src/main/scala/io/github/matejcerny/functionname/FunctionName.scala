@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 matejcerny
+ * Copyright 2026 matejcerny
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,8 @@
 
 package io.github.matejcerny.functionname
 
-import org.specs2.mutable.SpecLike
+opaque type FunctionName = String
 
-class FunctionNameTest extends SpecLike:
-
-  private def myOuterFunction: (String, String) =
-    def myInnerFunction: String = functionName.value
-    (myInnerFunction, functionName.value)
-
-  "return name of the inner and outer function" >> {
-    myOuterFunction must beEqualTo("myInnerFunction", "myOuterFunction")
-  }
+object FunctionName:
+  def apply(functionName: String): FunctionName = functionName
+  extension (functionName: FunctionName) def value: String = functionName

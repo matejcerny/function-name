@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 matejcerny
+ * Copyright 2026 matejcerny
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +16,5 @@
 
 package io.github.matejcerny.functionname
 
-opaque type FunctionName = String
-
-object FunctionName:
-  def apply(functionName: String): FunctionName = functionName
-  extension (functionName: FunctionName) def value: String = functionName
+export FunctionName.*
+export FunctionNameMacro.functionName
