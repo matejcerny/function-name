@@ -1,4 +1,4 @@
-# FunctionName
+# function-name
 
 ![](https://img.shields.io/badge/Scala%203-%23de3423.svg?logo=scala&logoColor=white)
 [![Latest version](https://maven-badges.sml.io/sonatype-central/io.github.matejcerny/function-name_3/badge.svg)](https://repo1.maven.org/maven2/io/github/matejcerny/function-name_3)
